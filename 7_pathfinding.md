@@ -1,3 +1,3 @@
 [TOC]
 
-# Module 7 - Path Finding
+# 7. Path Finding

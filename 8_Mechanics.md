@@ -1,3 +1,3 @@
 [TOC]
 
-# Module 8 - Mechanics
+# 8. Mechanics
