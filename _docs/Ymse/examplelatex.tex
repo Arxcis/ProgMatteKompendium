@@ -1,0 +1,65 @@
+\documentclass[12pt]{amsart}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\title{Examplefile in latex}
+\author{Bernt Jensen}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}{Exercise.}
+
+
+\begin{document} 
+
+\maketitle
+
+\section{Introdution}
+
+\subsection{Here we go}
+
+
+
+You write text as normal. Math needs to be written within dollar signs like this $4+5=19$ or $$50+30=100$$ to put it on a separate line.
+Fractions are written as $\frac{13}{12}$. Functions can be written like $sin(x)$ or $\mathrm{sin}(x)$ depending on what you like.
+Here is a matrix $\begin{pmatrix}1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9\end{pmatrix}$. Some logical symbols are $\wedge$, $\vee$, $\oplus$, $\rightarrow$,
+$\leftarrow$ and $\leftrightarrow$. Greek symbols $\alpha$, $\beta$. You can also use equations. Per cent is $\%$ and $\times$ is used for vector product.
+
+\begin{equation} \label{eq1}
+4\cdot 4 \cdot 5
+\end{equation}
+
+which you can refer\footnote{this is a footnote} to if you add a label. This refers to the equation above \ref{eq1}.
+
+you can write text within mathmode by $$4+3=7 \mbox{ this is some text within dollars}$$
+$$1,2,3,\cdots,10$$
+If you want to quote code you should write them in verbatim
+
+\vspace{10pt}
+
+\begin{verbatim}
+for(int i = 0; i ++; i < 100) {
+      foo();  // but that tab doesn't work,
+                // at least on my computer
+}
+\end{verbatim}
+
+\subsection{Here we go again}
+
+\section{And one more comment}
+
+
+When you write text with mathematics you never never never start with a mathematical symbol or a variable,
+
+
+
+
+
+
+\end{document}
+
+
+
+
