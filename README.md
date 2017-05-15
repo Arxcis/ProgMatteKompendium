@@ -17,6 +17,7 @@
   ​
 
 ![img](img/typora_example.png)
+
 *Image: Example of the Typora environment*
 
 

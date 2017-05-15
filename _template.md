@@ -7,7 +7,7 @@ A template showing the formatting of the kompendium
 
 **Sub-topic heading**
 
-
+Here is an example of a normal block of text. We want to limit the amount of text in this compendium as much as possible. Nonetheless it might be a good idea to collapse text together into bigger chunks were necesarry.
 
 #### LaTex math block example
 
