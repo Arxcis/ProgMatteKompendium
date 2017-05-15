@@ -5,6 +5,15 @@
 
 ## Recomended editors
 - **Sublime Text 3** - https://www.sublimetext.com
+
 - **Atom** - built in support for rendering .md-files - https://atom.io
+
 - **Typora** - A GUI editor for Markdown with inline LaTex mathematical blocks - https://typora.io
+
+  ​
+
+  ![img](_img/typora_example.png)
+
+  *Image: Example of the Typora environment*
+
 
