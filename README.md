@@ -13,10 +13,10 @@
 
 - **Typora** - A GUI editor for Markdown with inline LaTex mathematical blocks - https://typora.io
 
+
   ​
 
-  ![img](img/typora_example.png)
-
-  *Image: Example of the Typora environment*
+![img](img/typora_example.png)
+*Image: Example of the Typora environment*
 
 
