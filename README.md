@@ -12,7 +12,7 @@
 
   ​
 
-  ![img](_img/typora_example.png)
+  ![img](img/typora_example.png)
 
   *Image: Example of the Typora environment*
 
