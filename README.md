@@ -1,5 +1,5 @@
-## credit 
- - Big thank you to Lecturer at NTNU Gjøvik, Bernt Tore Jensen, for beiing responsible for the curriculum presented here.*
+## Credits 
+ - Big thanks to Lecturer at NTNU Gjøvik, Bernt Tore Jensen, for beiing responsible for the curriculum presented here.
 
 ## Mission
 - Create a "to the point" kompendium, which covers all topics in the Mathematics for Programming IMT 1121 - spring 2017 NTNU Gjøvik
