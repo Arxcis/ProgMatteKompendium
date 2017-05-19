@@ -1,4 +1,4 @@
-## Credits 
+## Credits
  - Big thanks to Lecturer at NTNU Gjøvik, Bernt Tore Jensen, for beiing responsible for the curriculum presented here.
 
 ## Mission
@@ -7,11 +7,12 @@
 - Every topic should have a practical example with inline code and/or math - blocks.
 
 ## Recomended editors
-- **Sublime Text 3** - https://www.sublimetext.com
 
-- **Atom** - built in support for rendering .md-files - https://atom.io
+- [**Atom**](https://atom.io) - built in add-on for rendering markdown, no LaTex support.
 
-- **Typora** - A GUI editor for Markdown with inline LaTex mathematical blocks - https://typora.io
+- [**Typora**]( https://typora.io) - A Desktop GUI editor for Markdown + inline LaTex support.
+
+- [**StackEdit**](https://stackedit.io) - A Web-based Markdown editor + inline LaTex support.
 
 
   ​
@@ -19,5 +20,3 @@
 ![img](img/typora_example.png)
 
 *Image: Example of the Typora environment*
-
-
