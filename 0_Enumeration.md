@@ -40,11 +40,14 @@ $$
 
 There is also a third rule. Sometimes you cannot solve a problem directly, but what you can do is translate the the problem to something we know how to solve. @example needed
 
+// Something about counting binary digits to solve a problem.
+// *The Rule of Counting in Two ways*
+
 
 
 ## 0.2 The 4 common counting situations
 
-You have a bag of balls numbered *1 to n* and you pick out *m* of these balls at random.
+You have a bag of balls numbered *1 to n* and you pick out *r* of these balls at random.
 There are two important questions to ask.
 
 1. Does the order of the balls you picked matter? (ordered/unordered)
@@ -54,31 +57,34 @@ There are two important questions to ask.
    ​
 
 
-**Ordered Selection, allowing repeats**
-
+**Ordered Selection, with repetition**
 $$
-n^m
+n^r\\
 $$
 
-
-**Ordered selection, disallow repeats**
-
+We flip a coin. It has *n = 2* sides. We flip the coin *r = 4* times. The number of combinations the outcomes can be ordered in is
 $$
-P(m,m)
+2^4 = 2 \cdot 2 \cdot 2 \cdot 2
 $$
 
 
-**Unordered selection, allowing repeats**
+**Ordered selection, without repetition**
+$$
+P(n,r) = n \cdot (n-1) \cdots(n-r)\  = \frac{n!}{(n-r)!}
+$$
+
+
+
+**Unordered selection, with repetition**
+$$
+C(n+m-1, n-1) = \binom{n+r-1}{r}
+$$
+
+
+**Unordered selection, without repetition**
 
 $$
-C(n+m-1, n-1)
-$$
-
-
-**Unordered selection, without repeats**
-
-$$
-C(n,m)
+C(n,r) = \binom{n}{r}
 $$
 
 ​In Lotto, m = 7 balls are chosen from n = 34. The order doesn’t matter, and once a ball has been picked, it is not put back in the bag. There is only |  *E* |= 1 winning combination.
@@ -88,7 +94,7 @@ $$
 P =  \frac {|E|}{|S|} = \frac{1}{C(34,7)}
 
 \\
-|S| = C(34,7) = \binom {34}{7} =
+| S | = C(34,7) = \binom {34}{7} =
 	\frac {34 \cdot 33 \cdot 32 \cdot 31 \cdot 30 \cdot 29 \cdot 28 }
 		  { 7 \cdot  6 \cdot  5 \cdot  4 \cdot  3 \cdot  2 \cdot  1 }
 									= 5 \ 379 \ 616
