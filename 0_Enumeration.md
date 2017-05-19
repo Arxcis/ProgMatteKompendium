@@ -10,7 +10,7 @@
 Enumeration is a fancy word for counting
 $$
 1 + 1 + 1 + 1 + 1 = 5 \\
-5  \times 1 = 5
+5  \cdot 1 = 5
 $$
 
 When using addition and multiplication while counting, keep in mind that they have to follow some simple rules.
@@ -32,7 +32,7 @@ If there are *n* choices for one action, and *m* choices of doing something else
 In mathematical terms @correctness:
 
 $$
-enumerate(n \land m) = n  \times m
+enumerate(n \land m) = n  \cdot m
 $$
 
 
@@ -42,7 +42,17 @@ There is also a third rule. Sometimes you cannot solve a problem directly, but w
 
 
 
-## 0.2 Common counting situations
+## 0.2 The 4 common counting situations
+
+You have a bag of balls numbered *1 to n* and you pick out *m* of these balls at random.
+There are two important questions to ask.
+
+1. Does the order of the balls you picked matter? (ordered/unordered)
+
+2. Are balls returned to the bag after being picked? (allow/disallow repeats)
+
+   ​
+
 
 **Ordered Selection, allowing repeats**
 
@@ -51,7 +61,7 @@ n^m
 $$
 
 
-**Ordered selection, without repeats**
+**Ordered selection, disallow repeats**
 
 $$
 P(m,m)
@@ -71,6 +81,20 @@ $$
 C(n,m)
 $$
 
+​In Lotto, m = 7 balls are chosen from n = 34. The order doesn’t matter, and once a ball has been picked, it is not put back in the bag. There is only |  *E* |= 1 winning combination.
+The probability for winning in Lotto is then:
+
+$$
+P =  \frac {|E|}{|S|} = \frac{1}{C(34,7)}
+
+\\
+|S| = C(34,7) = \binom {34}{7} =
+	\frac {34 \cdot 33 \cdot 32 \cdot 31 \cdot 30 \cdot 29 \cdot 28 }
+		  { 7 \cdot  6 \cdot  5 \cdot  4 \cdot  3 \cdot  2 \cdot  1 }
+									= 5 \ 379 \ 616
+\\
+P(winning \ lotto) = \frac{1}{5 \ 379 \ 616}
+$$
 
 
 <a name="#brilliant.org">1</a>: https://brilliant.org/wiki/rule-of-sum-and-rule-of-product-problem-solving/
