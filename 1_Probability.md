@@ -4,6 +4,37 @@
 
 ##  1.1 Sample space and event space
 
+In any given probability there's a _sample space_ and an _event space_ . When talking about sample space in probability, what we're really talking about is the set of possible outcomes. Likewise, when talking about event spaces, what we're really talking about is a specific set of outcomes. The event space is the set of outcomes matching a condition in our sample space.
+
+**Example**
+
+*You are picking a random letter in the alphabet. What is the probability of picking a vowel?*
+$$
+P(vowel)=\frac{\|S_{event}\|}{\|S_{sample}\|}\\
+S_{sample} = \\\{ A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z\} \Rightarrow \|S_{sample}\|=26\\ $$$$
+S_{event} = \{ A,E,I,O,U\} \Rightarrow \|S_{event}\|=5\\\\\text{(the letter y is not considered as a vowel in this case)}$$$$
+P(vowel)=\frac{5}{26} \approx19\%
+$$
+While the cardinality of the sets/spaces is easy to obtain and use in probability in the example above, it's not always as useful to talk about the cardinality of the set. In more geometric cases where probability is applied (which arguably often is the case in game programming), it makes more sense to talk about the lengths, areas and/or volumes as the value of the sets/spaces, as were simply interested in the ratio between all possible outcomes and possible outcomes of a certain constraint.
+
+**Example**
+
+​	*Scenario*: You've made a spawning system for a game, where an entity is spawned within a circle with a radi of 15 units. There's a potential problem using this spawning system however, as there's a trap placed within the spawning circle. The trap itself causes damage to the entities if they're inside its area of effect (AoE [no, not Age of Empires ​:rage:​]). You want to figure out whether or not this will be an issue. The probability is considered neglectible if P(spawn in trap's AoE) <= 0.1% (i.e. every 1000th entity are allowed to spawn on the trap), thereby making the spawning system valid.
+
+​	*Problem*: Will the spawning system be considered valid if the traps AoE-radi is 0.5 units?
+
+​	*Solution*: As the spawning system uses a circle as it sample space, it's clear we're working with a 2D-problem. This means we can use the area to describe the ratio between sample space and event space:
+$$
+P(\text{spawn in AoE of trap}) =\frac{A(trap)}{A(spawn)}=\frac{\pi\frac{1}{2}^2}{\pi15^2}=\frac{1}{4\cdot15^2}=\frac{1}{900}\\
+\frac{1}{900}\approx0.00111\dots > 0.1\%
+$$
+The probability of spawning inside the trap's AoE is just a tiny bit too high to be neglected. i.e. the spawning system is not valid (yet very close to being so).
+$$
+\text{Event space and sample space are simply the notion of "what we want" (event space)}\\
+\text{from "what we're dealing with" (sample space). In  probability, we're really}\\
+\text{just talking about the relation betwen them.}
+$$
+
 ## 1.2 Independent events
 
 ## 1.3 Dice
@@ -13,6 +44,10 @@
 ## 1.5 Independence and Conditional Probabilities
 
 ## 1.6 Bayes Theorem
+
+$$
+P(A|B)=\frac{P(B|A)\cdot P(A)}{P(B)}
+$$
 
 ## 1.7 Random Variables
 
