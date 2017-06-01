@@ -9,15 +9,23 @@ A Markov Chain is a *network* with these two properties:
 
 ## 2.1 States and chains
 
-The nodes in a Markov Chain are called states. A state can be in two different modes.
+The nodes in a Markov Chain are called states.
 
-**Transient state** -
+**Transient state** - May not be revisited indefinetly once reached. In other words: The state has, through transitions, a connection to an absorbing state. After $$\lim_{n\to\infty}$$  iterations the state will "never" be a transient state.
 
-**Absorbing state** -
+**Recurrent state** - May be revisited indefinetly once reached. The state has no connection to an absorbing state unless it is also absorbing.
 
-**Absorbing chain** - 
+**Absorbing state** - The only transition(s) from the state leads back to itself. Normally such a state has only the one transition (as multiple transitions to itself can be simplified to just the one) with $100\%$ probability.
 
-**Ergodic chain** -
+If a state is absorbing, it is never transient. It is however considered reccurent.
+
+**Absorbing chain** - The chain has a transition from a state but no transition(s) back. The chain has a transition A $\rightarrow$ B, but no transition B $\rightarrow \dots \rightarrow$ A. 
+
+An absorbing chain will have both reccurent states (or just the one) and transient states.
+
+**Ergodic chain** - A chain is ergodic iff (if and only if) it's not absorbing. i.e. It will always be possible to move from one state to another through one or more transitions.
+
+Ergodic chains has no absorbing states, thereby no transient states either. All states of an ergodic chain are recurrent.
 
 ## 2.2 The Stochastic Matrix
 
