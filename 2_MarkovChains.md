@@ -29,6 +29,10 @@ Ergodic chains has no absorbing states, thereby no transient states either. All 
 
 ## 2.2 The Stochastic Matrix
 
+The stochastic matrix is another representation of the markov chain. The matrix describes the transitions in the markov chain where the matrix-values are the diferent probabilities of the transitions. This means that the matrix will have a specific set of properties normal matrices don't neccesarily have.
+
+ @TODO properties - sum of rows/collumns = 1 etc.
+
 **Matrix blocks [Q, 0, R, I]** - 
 
 ## 2.3 The Fundamental Matrix N

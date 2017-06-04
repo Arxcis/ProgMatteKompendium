@@ -144,4 +144,4 @@ print(count / n)
 
 
 
-[^1]: Alle code examples on probability are gathered from "Example code from class" by Bernt, found at Fronter 2017
+[^1]: All code examples on probability are gathered from "Example code from class" by Bernt, found at Fronter 2017
